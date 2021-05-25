@@ -7,6 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button {
+  size: 15vh;
+  font-size: 20px;
+
+
+
+
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -1,8 +1,16 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from 'react';
+import App from './App.js';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
+
+test ('app check', () => {
+  render (
+    <App/>
+  )
+
+  userEvent.click(screen.getByText('Click me!'))
+  let displayedTest = screen.getByText("Hello there!!!!");
+  expect(displayedTest).toBeInTheDocument();
+
+})
