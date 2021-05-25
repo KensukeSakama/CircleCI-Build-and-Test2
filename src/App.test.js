@@ -4,7 +4,7 @@ import App from './App.js';
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 
-test ('app check', () => {
+test ('check if the new text is displayed when the button is clicked', () => {
   render (
     <App/>
   )
