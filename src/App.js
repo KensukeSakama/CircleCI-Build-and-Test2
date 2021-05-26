@@ -11,7 +11,8 @@ const App = () => {
   }
 
   return (
-    <div>
+
+    <div data-testid='testing-text-display'>
       <button onClick={onClick}>Click me!</button>
       {isClicked ? <Content/> : null}
     </div>
