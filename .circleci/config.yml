@@ -77,4 +77,4 @@ workflows:
       - build-and-test
       - deploy
         requires:
-          -build-and-test
+          - build-and-test
